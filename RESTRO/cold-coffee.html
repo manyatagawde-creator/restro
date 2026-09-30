@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cold Coffee - Restro</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <nav>
+
+        <h1 class="logo">𝙍𝙀𝙎𝙏𝙍𝙊</h1>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+
+            <li>
+                <a href="reservation.html">Reservation</a>
+            </li>
+
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+
+            <li>
+                <a href="reviews.html">Reviews</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="food-detail">
+
+
+    <div class="food-detail-box">
+
+        <img src="images/cold-coffee.jpg"
+             alt="Cold Coffee">
+
+
+        <div class="food-info">
+
+            <h2>
+                Cold Coffee
+            </h2>
+
+
+            <p>
+                A chilled and creamy coffee prepared with
+                milk and coffee, customized to your taste.
+            </p>
+
+
+            <h3>
+                Ingredients
+            </h3>
+
+
+            <p>
+                Milk, coffee, sugar, ice and optional toppings.
+            </p>
+
+
+            <form action="drink-order.php"
+                  method="POST">
+
+
+                <input type="hidden"
+                       name="drink"
+                       value="Cold Coffee">
+
+
+                <label>
+                    Your Name
+                </label>
+
+                <input type="text"
+                       name="name"
+                       required>
+
+
+                <label>
+                    Coffee Strength
+                </label>
+
+                <select name="strength">
+
+                    <option>
+                        Regular
+                    </option>
+
+                    <option>
+                        Strong
+                    </option>
+
+                    <option>
+                        Light
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Sweetness
+                </label>
+
+                <select name="sweetness">
+
+                    <option>
+                        Normal
+                    </option>
+
+                    <option>
+                        Less Sweet
+                    </option>
+
+                    <option>
+                        Extra Sweet
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Topping
+                </label>
+
+                <select name="topping">
+
+                    <option>
+                        No Topping
+                    </option>
+
+                    <option>
+                        Chocolate
+                    </option>
+
+                    <option>
+                        Caramel
+                    </option>
+
+                    <option>
+                        Whipped Cream
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Quantity
+                </label>
+
+                <input type="number"
+                       name="quantity"
+                       min="1"
+                       value="1"
+                       required>
+
+
+                <button type="submit">
+                    Order Drink
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Fresh Lime Soda - Restro</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+    <h1 class="logo">𝙍𝙀𝙎𝙏𝙍𝙊</h1>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+
+</header>
+
+<section class="food-detail">
+
+<div class="food-detail-box">
+
+    <img src="images/lime-soda.jpg"
+         alt="Fresh Lime Soda">
+
+    <div class="food-info">
+
+        <h2>Fresh Lime Soda</h2>
+
+        <p>
+            A refreshing lime drink made with fresh lime,
+            chilled soda and your choice of sweetness.
+        </p>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Fresh lime, soda, sugar, mint and ice.
+        </p>
+
+        <form action="drink-order.php" method="POST">
+
+            <input type="hidden"
+                   name="drink"
+                   value="Fresh Lime Soda">
+
+            <label>Your Name</label>
+
+            <input type="text"
+                   name="name"
+                   required>
+
+
+            <label>Sweetness</label>
+
+            <select name="sweetness">
+
+                <option>Normal</option>
+                <option>Less Sweet</option>
+                <option>No Sugar</option>
+                <option>Extra Sweet</option>
+
+            </select>
+
+
+            <label>Ice</label>
+
+            <select name="ice">
+
+                <option>Normal Ice</option>
+                <option>Less Ice</option>
+                <option>No Ice</option>
+
+            </select>
+
+
+            <label>Flavour</label>
+
+            <select name="flavour">
+
+                <option>Classic Lime</option>
+                <option>Mint</option>
+                <option>Ginger</option>
+
+            </select>
+
+
+            <label>Quantity</label>
+
+            <input type="number"
+                   name="quantity"
+                   min="1"
+                   value="1"
+                   required>
+
+
+            <button type="submit">
+                Order Drink
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Strawberry Milkshake - Restro</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<header>
+
+
+<nav>
+
+    <h1 class="logo">𝙍𝙀𝙎𝙏𝙍𝙊</h1>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+
+</header>
+
+<section class="food-detail">
+
+
+<div class="food-detail-box">
+
+    <img src="images/strawberry-milkshake.jpg"
+         alt="Strawberry Milkshake">
+
+    <div class="food-info">
+
+        <h2>Strawberry Milkshake</h2>
+
+        <p>
+            A creamy strawberry milkshake that can be
+            customized according to your preference.
+        </p>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Milk, strawberry flavour, sugar and ice cream.
+        </p>
+
+
+        <form action="drink-order.php" method="POST">
+
+            <input type="hidden"
+                   name="drink"
+                   value="Strawberry Milkshake">
+
+
+            <label>Your Name</label>
+
+            <input type="text"
+                   name="name"
+                   required>
+
+
+            <label>Sweetness</label>
+
+            <select name="sweetness">
+
+                <option>Normal</option>
+                <option>Less Sweet</option>
+                <option>Extra Sweet</option>
+
+            </select>
+
+
+            <label>Thickness</label>
+
+            <select name="thickness">
+
+                <option>Regular</option>
+                <option>Thick</option>
+                <option>Light</option>
+
+            </select>
+
+
+            <label>Topping</label>
+
+            <select name="topping">
+
+                <option>No Topping</option>
+                <option>Whipped Cream</option>
+                <option>Extra Strawberry</option>
+
+            </select>
+
+
+            <label>Quantity</label>
+
+            <input type="number"
+                   name="quantity"
+                   min="1"
+                   value="1"
+                   required>
+
+
+            <button type="submit">
+                Order Drink
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+</section>
+
+</body>
+</html>

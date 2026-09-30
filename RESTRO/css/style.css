@@ -1,0 +1,1017 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f1e7;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #5e4133;
+    padding: 18px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f6d28b;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 8px 4px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #eedbb4;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../images/restaurant.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content {
+    max-width: 850px;
+    color: white;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.quote {
+    font-size: 20px !important;
+    color: #f6d28b;
+    font-weight: bold;
+}
+
+
+/* =========================
+   HOME SPECIALITIES
+========================= */
+
+.home-special {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.home-special h2 {
+    color: #3b2416;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+.special-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.special-box {
+    width: 280px;
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.special-box h3 {
+    color: #7b451f;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   RESTAURANT TIMINGS
+========================= */
+
+.timing-info {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.timing-info p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+.timing-info strong {
+    color: #7b451f;
+}
+
+
+/* =========================
+   COMMON PAGE
+========================= */
+
+.page {
+    min-height: 75vh;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.page h2 {
+    font-size: 38px;
+    color: #3b2416;
+    margin-bottom: 10px;
+}
+
+.page-intro {
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   MENU BACKGROUND
+========================= */
+
+.menu-page {
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.82),
+            rgba(255,255,255,0.82)
+        ),
+        url("../images/menu-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.menu-item {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    padding-bottom: 20px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-7px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    margin-top: 15px;
+}
+
+.menu-item h3 a {
+    color: #3b2416;
+    transition: 0.3s;
+}
+
+.menu-item h3 a:hover {
+    color: #a35d27;
+}
+
+.menu-item p {
+    padding: 10px 15px;
+}
+
+.menu-item span {
+    display: inline-block;
+
+    color: #a35d27;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   OTHER FOODS / DRINKS
+========================= */
+
+.other-foods {
+    padding: 60px 40px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(246,210,139,0.15),
+            rgba(246,210,139,0.15)
+        );
+}
+
+.other-foods h2 {
+    color: #3b2416;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   RESERVATION
+========================= */
+
+.reservation-page {
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url("../images/reservation-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.content-box {
+    max-width: 750px;
+    margin: auto;
+
+    background: rgba(255,255,255,0.95);
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.2);
+}
+
+.content-box h2 {
+    color: #3b2416;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #3b2416;
+    margin-bottom: -10px;
+}
+
+button {
+    background: #3b2416;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7b451f;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-page {
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.78),
+            rgba(255,255,255,0.78)
+        ),
+        url("../images/gallery-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.gallery img {
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.18);
+
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews-page {
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.82),
+            rgba(255,255,255,0.82)
+        ),
+        url("../images/reviews-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.review-container {
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.review {
+    width: 280px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.12);
+}
+
+.review h3 {
+    color: #3b2416;
+}
+
+.stars {
+    margin: 10px 0;
+}
+
+.leave-review {
+    color: #3b2416;
+
+    margin-top: 40px;
+}
+
+.review-form {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-page {
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url("../images/contact-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-info {
+    margin-top: 35px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: #3b2416;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+
+/* =========================================================
+   FOOD DETAIL PAGES
+   PIZZA / PASTA / FRIES / DESSERT /
+   BURGER / SANDWICH / GARLIC BREAD / WRAP
+========================================================= */
+
+.food-detail {
+    min-height: 78vh;
+
+    padding: 70px 30px;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.85),
+            rgba(255,255,255,0.85)
+        ),
+        url("../images/menu-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* MAIN FOOD BOX */
+
+.food-detail-box {
+    width: 100%;
+    max-width: 950px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+/* FOOD IMAGE AREA */
+
+.food-detail-image {
+    width: 50%;
+
+    flex-shrink: 0;
+}
+
+.food-detail-image img {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 12px;
+}
+
+
+/* FOOD INFORMATION */
+
+.food-detail-content {
+    width: 50%;
+
+    text-align: left;
+}
+
+.food-detail-content h2 {
+    color: #3b2416;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.food-description {
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.food-detail-content h3 {
+    color: #7b451f;
+
+    margin-top: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* INGREDIENTS */
+
+.ingredients {
+    padding-left: 20px;
+
+    margin-bottom: 20px;
+}
+
+.ingredients li {
+    margin-bottom: 5px;
+}
+
+
+/* PRICE */
+
+.food-price {
+    color: #a35d27;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    margin: 15px 0;
+}
+
+
+/* RESERVATION BUTTON */
+
+.food-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: #3b2416;
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.food-btn:hover {
+    background: #7b451f;
+}
+
+
+/* BACK TO MENU */
+
+.back-menu {
+    color: #3b2416;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.back-menu:hover {
+    color: #a35d27;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   DRINK DETAIL PAGES
+   CUSTOM LIME SODA / COLD COFFEE /
+   STRAWBERRY MILKSHAKE / MINT MOJITO
+========================================================= */
+
+.food-detail-box .food-info {
+    width: 50%;
+
+    text-align: left;
+}
+
+.food-detail-box .food-info h2 {
+    color: #3b2416;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.food-detail-box .food-info h3 {
+    color: #7b451f;
+
+    margin-top: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* DRINK FORM */
+
+.food-detail-box .food-info form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.food-detail-box .food-info form label {
+    text-align: left;
+
+    font-weight: bold;
+
+    color: #3b2416;
+
+    margin-bottom: -5px;
+}
+
+.food-detail-box .food-info form input,
+.food-detail-box .food-info form select {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+.food-detail-box .food-info form button {
+    background: #3b2416;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 8px;
+}
+
+.food-detail-box .food-info form button:hover {
+    background: #7b451f;
+}
+
+
+/* =========================================================
+   DRINK PAGES USING DIRECT IMAGE
+   COLD COFFEE / OTHER CUSTOM DRINK PAGES
+========================================================= */
+
+/*
+   Some drink pages use the image directly inside
+   .food-detail-box instead of .food-detail-image.
+   These rules support that structure without changing
+   the existing food-detail page layout.
+*/
+
+.food-detail-box > img {
+    width: 50%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SUCCESS PAGE
+========================================================= */
+
+.success-page {
+    min-height: 78vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url("../images/reservation-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.success-box {
+    max-width: 600px;
+
+    text-align: center;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.2);
+}
+
+.success-box h2 {
+    color: #3b2416;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #3b2416;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 18px;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .menu-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* FOOD DETAIL */
+
+    .food-detail-box {
+        flex-direction: column;
+    }
+
+    .food-detail-image {
+        width: 100%;
+    }
+
+    .food-detail-content {
+        width: 100%;
+    }
+
+    .food-detail-box .food-info {
+        width: 100%;
+    }
+
+    .food-detail-image img {
+        width: 100%;
+        height: 320px;
+    }
+
+
+    /* DIRECT DRINK IMAGE */
+
+    .food-detail-box > img {
+        width: 100%;
+        height: 320px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: 220px;
+    }
+
+
+    .page {
+        padding: 40px 20px;
+    }
+
+
+    .content-box {
+        padding: 25px;
+    }
+
+
+    .food-detail {
+        padding: 40px 20px;
+    }
+
+
+    .food-detail-box {
+        padding: 20px;
+    }
+
+
+    .food-detail-image img {
+        height: 260px;
+    }
+
+
+    /* DIRECT DRINK IMAGE */
+
+    .food-detail-box > img {
+        width: 100%;
+        height: 260px;
+    }
+
+
+    .food-detail-content h2,
+    .food-detail-box .food-info h2 {
+        font-size: 28px;
+    }
+
+}

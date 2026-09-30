@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Restro - Reservation</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <nav>
+
+        <h1 class="logo">𝙍𝙀𝙎𝙏𝙍𝙊</h1>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="menu.html">Menu</a></li>
+
+            <li><a href="reservation.html">Reservation</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+
+            <li><a href="reviews.html">Reviews</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="page reservation-page">
+
+    <div class="content-box">
+
+        <h2>Make a Reservation</h2>
+
+        <p>
+            Reserve a table at Restro and enjoy
+            a comfortable dining experience.
+        </p>
+
+        <p>
+            We also accept pre-bookings for birthdays,
+            anniversaries, family gatherings and
+            other special events.
+        </p>
+
+
+        <form action="reservation.php"
+              method="POST">
+
+
+            <input type="text"
+                   name="name"
+                   placeholder="Your Name"
+                   required>
+
+
+            <input type="tel"
+                   name="phone"
+                   placeholder="Phone Number"
+                   required>
+
+
+            <input type="email"
+                   name="email"
+                   placeholder="Email Address"
+                   required>
+
+
+            <label>
+                Reservation Date
+            </label>
+
+            <input type="date"
+                   name="date"
+                   required>
+
+
+            <label>
+                Reservation Time
+            </label>
+
+            <input type="time"
+                   name="time"
+                   required>
+
+
+            <input type="number"
+                   name="guests"
+                   placeholder="Number of Guests"
+                   min="1"
+                   required>
+
+
+            <label>
+                Reservation Type
+            </label>
+
+            <select name="reservation_type"
+                    required>
+
+                <option value="">
+                    Select Reservation Type
+                </option>
+
+                <option value="Regular Table">
+                    Regular Table
+                </option>
+
+                <option value="Birthday Party">
+                    Birthday Party
+                </option>
+
+                <option value="Anniversary">
+                    Anniversary
+                </option>
+
+                <option value="Family Event">
+                    Family Event
+                </option>
+
+                <option value="Other Event">
+                    Other Event
+                </option>
+
+            </select>
+
+
+            <textarea name="message"
+                      placeholder="Special Request or Message">
+            </textarea>
+
+
+            <button type="submit">
+                Make Reservation
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
